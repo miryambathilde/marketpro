@@ -1,6 +1,7 @@
 <!--INCLUDERS -->
 <?php 
 $tituloPagina = "Sobre nosotros";
+$pagina = "nosotros";
 include('inc/header.php'); 
 ?>
 

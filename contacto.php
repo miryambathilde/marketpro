@@ -1,6 +1,7 @@
 <!--INCLUDERS -->
 <?php 
 $tituloPagina = "Contacta con nosotros";
+$pagina = "contacto"; 
 include('inc/header.php'); 
 ?>
 

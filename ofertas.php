@@ -1,6 +1,7 @@
 <!--INCLUDERS -->
 <?php 
 $tituloPagina = "Ofertas Destacadas";
+$pagina = "ofertas";
 include('inc/header.php'); 
 ?>
 

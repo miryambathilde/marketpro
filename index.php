@@ -1,6 +1,7 @@
 <!--INCLUDERS -->
 <?php 
 $tituloPagina = "Inicio MarketPro";
+$pagina = "inicio";
 include('inc/header.php'); 
 ?>
 
