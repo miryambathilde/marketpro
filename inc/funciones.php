@@ -34,8 +34,8 @@ $ofertas [002] = array (
 );
 
 $ofertas [003] = array (
-  "nombre" => "Salto en paracaidas",
-  "introDescripcion" => "Viva la sensación ser pájaro por un día",
+  "nombre" => "Paracaidismo",
+  "introDescripcion" => "Para los más atrevidos",
   "descripcion" => "Siente la auténtica adrenalina...",
   "imagen" => "img/paracaidas.jpg",
   "precio" => 280,
@@ -43,7 +43,7 @@ $ofertas [003] = array (
 );
 
 $ofertas [004] = array (
-  "nombre" => "Especial menú gourmet",
+  "nombre" => "Menú Gourmet",
   "introDescripcion" => "Vive la mejor experiencia gastronómica",
   "descripcion" => "Siente el placer de comer como un verdadero sibarita...",
   "imagen" => "img/gourmet.jpg",
