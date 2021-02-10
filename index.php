@@ -1,43 +1,6 @@
-<?php
-$ofertas = array ();
-//array con valor 1 y los valores serían las filas de la BBDD//
-$ofertas [001] = array (
-  "nombre" => "SPA para 2",
-  "introDescripcion" => "Vive un momento inolvidable en Andorra",
-  "descripcion" => "No te puedes perder...",
-  "imagen" => "img/spa.jpg",
-  "precio" => 389,
-  "precioOferta" => 49,
-);
+<!--aqui cargamos el archivo de funciones.php -->
+<?php include('inc/funciones.php'); ?>
 
-$ofertas [002] = array (
-  "nombre" => "Especial Sushi",
-  "introDescripcion" => "El auténtico sabor de Japón en Barcelona",
-  "descripcion" => "Siéntete único por un día...",
-  "imagen" => "img/sushi.jpg",
-  "precio" => 80,
-  "precioOferta" => 20,
-);
-
-$ofertas [003] = array (
-  "nombre" => "Salto en paracaidas",
-  "introDescripcion" => "Viva la sensación de volar como un auténtico pájaro",
-  "descripcion" => "Siente la auténtica adrenalina...",
-  "imagen" => "img/paracaidas.jpg",
-  "precio" => 280,
-  "precioOferta" => 150,
-);
-
-$ofertas [004] = array (
-  "nombre" => "Especial menú gourmet",
-  "introDescripcion" => "Vive la mejor experiencia gastronómica",
-  "descripcion" => "Siente el placer de comer como un verdadero sibarita...",
-  "imagen" => "img/gourmet.jpg",
-  "precio" => 150,
-  "precioOferta" => 60,
-);
-
-?>
 <!--INCLUDERS -->
 <?php 
 $tituloPagina = "Inicio MarketPro";
@@ -57,17 +20,13 @@ include('inc/header.php');
     <!-- COPIAMOS ESTO DE FOOTER.PHP -->
     <!-- Destacados -->
     <div class="container">
+
       <div class="row">
       <!-- BUCLE FOR EACH PARA LAS OFERTAS -->
-      <?php foreach ($ofertas as $oferta){?>
-
-        <div class="col-lg-3">
-          <h2><?php echo $oferta["nombre"];?></h2>
-          <img src="<?php echo $oferta["imagen"];?>" alt="<?php echo $oferta["nombre"];?>" class="img-rounded">
-          <p><?php echo $oferta["introDescripcion"];?></p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      <?php }?>
+      <!-- FUNCION PORTADA DONDE LA CLAVE VALOR ES EL ID DE CADA OFERTA -->
+      <?php foreach ($ofertas as $oferta_id => $oferta) {
+        echo portada ($oferta_id, $oferta);  
+      } ?>
     </div>    
 
     <hr>
