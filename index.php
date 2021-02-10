@@ -1,3 +1,34 @@
+<?
+$ofertas = array ();
+//array con valor 1 y los valores serían las filas de la BBDD//
+$ofertas [001] = array (
+  "nombre" => "SPA para 2",
+  "introDescripcion" => "Vive un momento inolvidable...",
+  "descripcion" => "No te puedes perder...",
+  "imagen" => "url",
+  "precio" => 389,
+  "precioOferta" => 49,
+);
+
+$ofertas [002] = array (
+  "nombre" => "Experiencia Porsche",
+  "introDescripcion" => "Vive la velocidad como nadie...",
+  "descripcion" => "Siéntete único por un día...",
+  "imagen" => "url",
+  "precio" => 450,
+  "precioOferta" => 59,
+);
+
+$ofertas [003] = array (
+  "nombre" => "Salto en paracaidas",
+  "introDescripcion" => "Viva la sensación de volar...",
+  "descripcion" => "Siente la auténtica adrenalina..",
+  "imagen" => "url",
+  "precio" => 600,
+  "precioOferta" => 200,
+);
+
+?>
 <!--INCLUDERS -->
 <?php 
 $tituloPagina = "Inicio MarketPro";
