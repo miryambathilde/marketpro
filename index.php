@@ -22,12 +22,16 @@ include('inc/header.php');
     <div class="container">
 
       <div class="row">
-      <!-- BUCLE FOR EACH PARA LAS OFERTAS -->
-      <!-- FUNCION PORTADA DONDE LA CLAVE VALOR ES EL ID DE CADA OFERTA -->
-      <?php foreach ($ofertas as $oferta_id => $oferta) {
-        echo portada ($oferta_id, $oferta);  
-      } ?>
-    </div>    
+      <!-- BUCLE WHILE PARA LAS OFERTAS. ASI PODEMOS PONER UN FILTRO DE CANTIDAD Y LIMITAR LA CANTIDAD A MOSTRAR -->
+      <?php 
+      $x = 1;
+      $ofertas;
+      while($x <=3 AND list($oferta_id, $oferta) = each($ofertas)){
+        //hacemos echo de funcion portada function portada($oferta_id, $oferta) en funciones.php//
+        echo portada($oferta_id, $oferta);
+        $x++;
+      }?>
+      </div>
 
     <hr>
 

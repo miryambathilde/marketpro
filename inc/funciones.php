@@ -21,7 +21,7 @@ $ofertas [001] = array (
   "descripcion" => "No te puedes perder...",
   "imagen" => "img/spa.jpg",
   "precio" => 389,
-  "precioOferta" => 49,
+  "precioOferta" => 120,
 );
 
 $ofertas [002] = array (
@@ -35,11 +35,11 @@ $ofertas [002] = array (
 
 $ofertas [003] = array (
   "nombre" => "Paracaidismo",
-  "introDescripcion" => "Para los más atrevidos",
+  "introDescripcion" => "Para los amantes de la adrenalina",
   "descripcion" => "Siente la auténtica adrenalina...",
-  "imagen" => "img/paracaidas.jpg",
+  "imagen" => "img/paracaidismo.jpg",
   "precio" => 280,
-  "precioOferta" => 150,
+  "precioOferta" => 100,
 );
 
 $ofertas [004] = array (
