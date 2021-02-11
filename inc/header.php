@@ -41,10 +41,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li <?php if ($pagina == "inicio") {echo "class='active'";}?>><a href="index.php">Inicio</a></li>
-              <li <?php if ($pagina == "nosotros") {echo "class='active'";}?>><a href="nosotros.php">Sobre nosotros</a></li>
-              <li <?php if ($pagina == "ofertas") {echo "class='active'";}?>><a href="ofertas.php">Ofertas</a></li>
-              <li <?php if ($pagina == "contacto") {echo "class='active'";}?>><a href="contacto.php">Contacto</a></li>
+              <li <?php if ($pagina == "inicio") {echo "class='active'";}?>><a href="index.html">Inicio</a></li>
+              <li <?php if ($pagina == "nosotros") {echo "class='active'";}?>><a href="nosotros.html">Sobre nosotros</a></li>
+              <li <?php if ($pagina == "ofertas") {echo "class='active'";}?>><a href="ofertas.html">Ofertas</a></li>
+              <li <?php if ($pagina == "contacto") {echo "class='active'";}?>><a href="contacto.html">Contacto</a></li>
           </ul>
           <form class="navbar-form navbar-right" role="form">
             <div class="form-group">
