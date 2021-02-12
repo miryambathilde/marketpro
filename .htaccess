@@ -1,1 +1,1 @@
-AddHandler application/x-httpd-php .php .html
+RewriteRule index\.php http://www.google.com [R]
