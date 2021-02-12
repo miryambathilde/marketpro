@@ -22,16 +22,22 @@ include('inc/header.php');
     <div class="container">
 
       <div class="row">
-      <!-- BUCLE WHILE PARA LAS OFERTAS. ASI PODEMOS PONER UN FILTRO DE CANTIDAD Y LIMITAR LA CANTIDAD A MOSTRAR -->
+      <!-- BUCLE WHILE PARA LAS OFERTAS. ASI PODEMOS PONER UN FILTRO DE CANTIDAD Y LIMITAR LA CANTIDAD A MOSTRAR
+      each ya esta obsoleto en PHP 8.0.1 -->
       <?php 
       $x = 1;
       $ofertas;
-      while($x <=3 AND list($oferta_id, $oferta) = each($ofertas)){
-        //hacemos echo de funcion portada function portada($oferta_id, $oferta) en funciones.php//
-        echo portada($oferta_id, $oferta);
-        $x++;
-      }?>
-      </div>
+      foreach ($ofertas as $oferta){?>
+
+        <div class="col-lg-3">
+          <h2><?php echo $oferta["nombre"];?></h2>
+          <img src="<?php echo $oferta["imagen"];?>" alt="<?php echo $oferta["nombre"];?>" class="img-rounded">
+          <p><?php echo $oferta["introDescripcion"];?></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      <?php }?>
+    </div>    
+
 
     <hr>
 
