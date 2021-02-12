@@ -18,7 +18,7 @@ include('inc/header.php');
     </div>
      
     <!-- COPIAMOS ESTO DE FOOTER.PHP -->
-    <!-- Destacados -->
+    <!-- Destacados WHILE and EACH QUEDAN OBSOLETOS-->
     <div class="container">
       <div class="row">
       <!-- foreach ($array as $clave => $valor) { $array[3] se actualizará con cada valor de $array...
