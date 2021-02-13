@@ -7,5 +7,15 @@ try {
 	exit;
 }
 
-echo "Se ha conectado con éxito";
+try {
+	$resultado = $bd->query("SELECT sku, nombre, introDescripcion, descripcion, img, precio, precioOferta, moneda FROM ofertas ORDER BY sku");
+} catch (Exception $e){
+	echo "La consulta no se ha podido realizar";
+	exit;
+}
+
+$ofertas = $resultado->fetchAll(PDO::FETCH_ASSOC);
+echo "<pre>";
+var_dump($ofertas);
+
 ?>
