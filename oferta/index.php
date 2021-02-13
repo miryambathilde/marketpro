@@ -4,7 +4,6 @@
 aqui cargamos el archivo de funciones.php DOCUMENT_ROOT es una llamada al directorio raíz -->
 <?php include(ROOT.'/inc/funciones.php'); ?>
 
-<!--INCLUDERS -->
 <?php 
 if (isset($_GET ["id"])) {
   $oferta_id = $_GET["id"];
@@ -18,9 +17,9 @@ $oferta = $ofertas[$oferta_id];
 
 $tituloPagina = "Oferta Destacada";
 $pagina = "oferta";
+
 include(ROOT.'/inc/header.php'); 
 ?>
-
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">

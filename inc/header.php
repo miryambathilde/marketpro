@@ -37,7 +37,7 @@
             <span class="icon-bar"></span>
           </button>
           <!--MENU DE NAVEGACION-->
-          <a class="navbar-brand" href="#"></a>
+          <a class="navbar-brand" href="#">Marketpro</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
