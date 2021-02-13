@@ -7,7 +7,7 @@ $salida = $salida . '<div class="col-lg-3">';
 $salida = $salida . '<h2>'. $oferta["nombre"] . '</h2>';
 $salida = $salida . '<img src="'. $oferta["imagen"] .'" alt=" '. $oferta["nombre"] . '"class="img-rounded">';
 $salida = $salida . '<p>'. $oferta["introDescripcion"] . '</p>';
-$salida = $salida . '<p><a class="btn btn-danger" href="oferta.php?id=' . $oferta_id .'">Antes '. $oferta["precio"] . '<strong> Ahora '. $oferta["precioOferta"].'</strong></a></p> </div>';
+$salida = $salida . '<p><a class="btn btn-danger" href="oferta/index.php?id=' . $oferta_id .'">Antes '. $oferta["precio"] . '<strong> Ahora '. $oferta["precioOferta"].'</strong></a></p> </div>';
     
 return $salida;
     

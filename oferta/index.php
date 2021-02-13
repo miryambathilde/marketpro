@@ -1,5 +1,8 @@
-<!--aqui cargamos el archivo de funciones.php -->
-<?php include('inc/funciones.php'); ?>
+<!--aqui hacemos el require del archivo conf.php
+<?php require_once('../inc/conf.php'); ?>
+
+aqui cargamos el archivo de funciones.php DOCUMENT_ROOT es una llamada al directorio raíz -->
+<?php include(ROOT.'/inc/funciones.php'); ?>
 
 <!--INCLUDERS -->
 <?php 
@@ -15,7 +18,7 @@ $oferta = $ofertas[$oferta_id];
 
 $tituloPagina = "Oferta Destacada";
 $pagina = "oferta";
-include('inc/header.php'); 
+include(ROOT.'/inc/header.php'); 
 ?>
 
 
@@ -37,6 +40,4 @@ include('inc/header.php');
       </div>
     </div>
 
-   
-
-<?php include('inc/footer.php'); ?>   
+<?php include(ROOT.'/inc/footer.php'); ?>

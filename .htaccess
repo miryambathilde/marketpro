@@ -1,1 +1,2 @@
-AddHandler application/x-httpd-php .php .html
+Options +FollowSymLinks
+RewriteEngine on
