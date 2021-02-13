@@ -18,18 +18,27 @@ include('inc/header.php');
     </div>
      
     <!-- COPIAMOS ESTO DE FOOTER.PHP -->
-    <!-- Destacados WHILE and EACH QUEDAN OBSOLETOS-->
+    <!-- Destacados -->
     <div class="container">
+
       <div class="row">
-      <!-- foreach ($array as $clave => $valor) { $array[3] se actualizará con cada valor de $array...
-      echo "{$clave} => {$valor} "; -->
-      <?php foreach($ofertas as $oferta_id => $oferta) {
-        if ($oferta_id >3){
-          break;
-        }
-        echo portada($oferta_id, $oferta);
-      } ?>
+      <!-- BUCLE WHILE PARA LAS OFERTAS. ASI PODEMOS PONER UN FILTRO DE CANTIDAD Y LIMITAR LA CANTIDAD A MOSTRAR
+      each ya esta obsoleto en PHP 8.0.1 -->
+      <?php 
+      $x = 1;
+      $ofertas;
+      foreach ($ofertas as $oferta){?>
+
+        <div class="col-lg-3">
+          <h2><?php echo $oferta["nombre"];?></h2>
+          <img src="<?php echo $oferta["imagen"];?>" alt="<?php echo $oferta["nombre"];?>" class="img-rounded">
+          <p><?php echo $oferta["introDescripcion"];?></p>
+          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      <?php }?>
     </div>    
+
+
     <hr>
 
   </div> <!-- /Destacados -->
