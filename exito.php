@@ -1,0 +1,1 @@
+<h2>Su pago se ha realizado con éxito!</h2>
